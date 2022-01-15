@@ -38,6 +38,7 @@
 #influencer{
     display: flex;
     margin: 40px;
+    flex-wrap: wrap;
     
 }
 .kokhon{
@@ -86,6 +87,7 @@ h1{
     margin-left: 200px;
     margin-top: 100px;
     margin-bottom: 40px;
+    flex-wrap: wrap;
  
 }
 .pasapasi img{
@@ -120,6 +122,12 @@ h1{
     font-size: 34px;
 }
 
+
+.box img:hover {
+    transform: scale(1.1);
+    transition: transform 2s ease-in-out;
+   
+}
 .fas{
     color: orange;
 }
@@ -127,9 +135,38 @@ h1{
     font-size: 40px;
     /* border: 1px solid red; */
 }
+.sesh{
+    background-color: black;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    height: 300px;
+    padding: 40px;
+}
+#seshh{
+    font-size: 50px;
+}
+.fab{
+    margin: 15px;
+}
 @media only screen and (min-width: 2000px) {
     .container {
       
       width: 2000px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+   footer {
+      
+      width: 600px;
+      font-size: 30px;
+    }
+    .influencer{
+        width: 600px;
+        
+    }
+    .pasapasi{
+        width: 600px;
     }
   }
